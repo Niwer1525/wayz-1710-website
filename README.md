@@ -1,1 +1,1 @@
-# wayz-1710-website
+# The WayZ 1.7.10 vesion website
