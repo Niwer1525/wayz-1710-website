@@ -1,0 +1,171 @@
+<!-- INFOS -->
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title lang>WayZ - Home</title>
+<!-- RESOURCES -->
+<link rel="icon" type="image/png" href="http://files.wayzserv.fr/gameLogo.png" />
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="css/responsee.css">
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="owl-carousel/owl.theme.css"> 
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/responsee.js"></script>               
+<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/demo.css"/>
+<script src="https://cdn.plyr.io/3.6.3/demo.js"></script>
+
+<!-- MAIN -->
+<html>
+    <div id="context-menu">
+        <div class="item" onclick="copyToClipboard()" lang="en"><i class="fa fa-clone"></i>Copy</div> <div class="item" onclick="copyToClipboard()" lang="fr"><i class="fa fa-clone"></i>Copier</div><hr>
+        <div class="item" onclick="window.location.reload()" lang="en"><i class="fa fa-sync"></i>Reload</div> <div class="item" onclick="window.location.reload()" lang="fr"><i class="fa fa-sync"></i>Recharger</div>
+        <div class="item" id="switch-lang" lang="en"><i class="fas fa-language"></i>Switch lang</div>
+        <div class="item" id="switch-lang" lang="fr"><i class="fas fa-language"></i>Changer de langue</div>
+        <div class="item modal-button" data-modal="modal-download" lang="en"><i class="fa fa-download"></i>Download</div> <div class="item modal-button" data-modal="modal-download" lang="fr"><i class="fa fa-download"></i>Télécharger</div>
+    </div>
+    <!-- HEAD -->
+    <header>
+        <div class="slideshow-container">
+            <div class="slider fade">
+                <img src="http://files.wayzserv.fr/backgrounds/background_1.png" style="width:100%">
+                <div class="text" lang="en">Our staff is listening to you!<hr></div><div class="text" lang="fr">Notre équipe est à votre écoute!<hr></div>
+                <div class="sub-text" lang="en">We are listening to all your ideas, problems and more.<br>Don't hesitate to join the staff!</div>
+                <div class="sub-text" lang="fr">Nous sommes à l'écoute de toutes vos idées, vos problèmes et autres.<br>N'esitez pas à rejoindre l'équipe!</div>
+            </div>
+            <div class="slider fade">
+                <img src="http://files.wayzserv.fr/backgrounds/background_2.png" style="width:100%">
+                <div class="text" lang="en">Optimized servers for a unique experience!<hr></div><div class="text" lang="fr">Des serveurs optimisés pour une expérience unique!<hr></div>
+                <div class="sub-text" lang="en">Our machines are optimized and our mod designed for this, will allow you to play with 32+ chunks of viewing distance!</div><div class="sub-text" lang="fr">Nos machines sont optimisées et notre mod conçu pour cela, vous permettra de jouer avec 32+ chunks de distance de vue!</div>
+            </div>
+            <div class="slider fade">
+                <img src="http://files.wayzserv.fr/backgrounds/background_3.png" style="width:100%">
+                <div class="text" lang="en">Play with our communauty<hr></div><div class="text" lang="fr">Jouez avec la communauté<hr></div>
+                <div class="sub-text" lang="en">What are you waiting for? <a class="link modal-button" data-modal="modal-download">Download</a> the mod and join the communauty ingame!</div><div class="sub-text" lang="fr">Qu'attendez vous? <a class="link modal-button" data-modal="modal-download">Téléchargez</a> le mod et rejoignez la communauté en jeu!</div>
+            </div>
+            <div class="slider fade">
+                <img src="http://files.wayzserv.fr/backgrounds/background_4.png" style="width:100%">
+                <div class="text" lang="en">Welcome!<hr></div><div class="text" lang="fr">Bienvenu!<hr></div>
+                <div class="sub-text" lang="en">An unreal project based on an old youtube serie.<br><script>getTimeRemaining('2015-12-31').total</script></div>
+            </div><br>
+            <a class="prev" onclick="slides(-1)">&#10094;</a>
+            <a class="next" onclick="slides(1)">&#10095;</a>
+        </div>
+        <nav class="bannerheader">
+            <div class="m-12 l-2"><img class="s-5 m-2 l-4" src="http://files.wayzserv.fr/gameLogo.png"></div>
+             <div class="top-nav">
+                <ul class="right chevron">
+                    <li class="active-item"><a class="btn" href="home.html" lang="en">Home</a> <a class="btn" href="home.html" lang="fr">Accueil</a></li>
+                    <li><a class="btn" href="shop.html" lang="en">Shop</a> <a class="btn" href="shop.html" lang="fr">Boutique</a></li>
+                    <li><a class="btn">F.A.Q</a></li>
+                    <li><a class="btn" lang="en">Other</a> <a class="btn" lang="fr">Autre</a><ul>
+                        <li><a class="btn">RESOURCES</a></li>
+                        <li><a class="btn">TEST</a></li>
+                    </ul></li>
+                    <a class="modal-button download-button" data-modal="modal-download" lang="en"><i class="fa fa-download"></i> Download</a> <a class="modal-button download-button" data-modal="modal-download" lang="fr"><i class="fa fa-download"></i> Télécharger</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- BODY -->
+    <body class="size-1280">
+        <div class="content">
+            <div class="modal s-12 m-6 l-4" id="modal-contact">
+                <h1 lang="en">Contact us</h1> <h1 lang="fr">Contactez nous</h1>
+                <h5 lang="en">Send us an e-mail for more professional requests</h5> <h5 lang="fr">Envoyez-nous un e-mail pour les demandes plus professionnelles</h5><br>
+                <form class="customform" action="email.php" method="post" name="mailForm"></h1>
+                    <input name="mail" placeholder="E-Mail" title="e-mail" type="text"/>
+                    <input name="subject" placeholder="Subject" title="subject" type="text"/>
+                    <input name="message" placeholder="Message" title="message" type="text"/>
+                    <button type="submit" lang="en">Send</button><button type="submit" lang="fr">Envoyer</button>
+                    <h4><a  class="link" onclick="setClipboardText('')" target="blank"></a></h4>
+                </form>
+            </div>
+            <div class="modal s-12 m-6 l-4" id="modal-download">
+                <h1 lang="en">Download our launcher!</h1> <h1 lang="fr">Télécharger le lanceur!</h1>
+                <h5 lang="en">Choose launcher for your Operating System: </h5> <h5 lang="fr">Choisisez le lanceur pour votre système d'exploitation: </h5><br><br>
+                <a href="" target="blank"><i style="font-size:110px;" class="socialnetwork fab fa-windows"></i></a>
+                <a href="" target="blank"><i style="font-size:110px;" class="socialnetwork fab fa-linux"></i></a>
+                <a href="" target="blank"><i style="font-size:110px;" class="socialnetwork fab fa-apple"></i></a>
+            </div>
+            <div class="line margin-bottom">
+                <div class="box">
+                    <h2 class="text-center" lang="en">About us:</h2><h2 class="text-center" lang="fr">A propos de nous:</h2>
+                    <h4>Our objective is to create an fully customisable Minecraft Mod to create any environement we want.<br>
+                        Our first official server is a Zombie Survival Gamemode based on the old youtube french serie named HunterZ from <a class="link" herf="https://www.youtube.com/" target="blank">GussDx</a>.<br>
+                        In the futur we want to create new servers types.<br>
+                        For exemple: SCFI Server, SCP Server and more. We want comunauty can create servers too<br>
+                    </h4>
+                </div>
+            </div>
+            
+            <div style="width: 500px;" class="plyr__video-embed" id="player">
+                <iframe src="https://www.youtube.com/" allowtransparency></iframe>
+            </div>
+            <div class="line">
+                <div class="margin">
+                    <div class="s-12 l-4 margin-bottom">
+                        <div class="box">
+                            <h4 class="text-center" lang="en">Our last video:</h4><h4 class="text-center" lang="fr">Notre dernières vidéo:</h4>
+                            <iframe class="latestVideoEmbed" vnum='0' cid="" width="365" height="200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="s-12 l-4 margin-bottom">
+                        <div class="box">
+                            <h4 class="text-center" lang="en">Our last live:</h4><h4 class="text-center" lang="fr">Notre dernier direct:</h4>
+                        </div>
+                    </div>
+                    <div class="s-12 l-4 margin-bottom">
+                        <div class="box">
+                            <h4 class="text-center" lang="en">Nos dernières vidéos</h4>
+                            <iframe class="latestVideoEmbed" vnum='0' cid="" width="258" height="170" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line margin-bottom">
+                <div class="box">
+                    <h2 class="text-center" lang="en">Join us!</h2><h2 class="text-center" lang="fr">Rejoignez nous!</h2>
+                    <a href="" target="blank"><i style="font-size:80px;" class="socialnetwork fas fa-hard-hat"></i></a>
+                    <a href="" target="blank"><i style="font-size:80px;" class="fab fa-apple"></i></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- FOOTER -->
+    <footer class="bannerfooter">
+        <div class="s-12 l-2">
+            <a href="https://www.youtube.com/channel/" target="blank"><i class="socialnetwork fab fa-youtube"></i></a>
+            <a href="https://www.twitch.tv/" target="blank"><i class="socialnetwork fab fa-twitch"></i></a>
+            <a href="https://discord.gg/" target="blank"><i class="socialnetwork fab fa-discord"></i></a>
+        </div>
+        <div class="s-12 l-8 text-center" style="position: relative; bottom: 12px;"><h5 id="copyright">Copyright © WayZ</h5></div>
+        <div class="s-12 l-2">
+            <a class="right" id="switch-lang"><i class="socialnetwork fas fa-language"></i></a>
+            <a class="right" href="" target="blank"><i class="socialnetwork fas fa-hammer"></i></a>
+            <a class="right modal-button" data-modal="modal-contact"><i class="socialnetwork fas fa-envelope"></i></a>
+        </div>
+    </footer>
+</html>
+<!-- END -->
+<!-- <script>
+    var slideIndex = 0;
+    showSlides(slideIndex);
+
+    function slides(n) { showSlides(slideIndex += n); }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slider");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) { slides<i>.style.display = "none"; }
+        slides<slideIndex-1>.style.display = "block";
+    } 
+
+    function autoSlides() {}
+</script> -->
